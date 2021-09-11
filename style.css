@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+@font-face {
+    font-family: myFirstFont;
+    src: url(spongebob.ttf);
+  }
+@font-face{
+    font-family: mercuria;
+    src: url(mercuria.ttf);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+#mainDiv{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: rgb(245, 241, 241);
+}
+#mainHeading{
+    /* font-family: 'Open Sans', sans-serif; */
+    padding: 20px 0 0 0;
+    font-family: myFirstFont;
+    font-size: 3em;
+    background: rgb(240, 154, 175);
+}
+#mainHeading::selection{
+    background: rgb(211, 110, 135);
+    color: white;
+}
+
+#convert, #reset{
+    background: rgb(240, 154, 175);
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: mercuria;
+    font-weight: bold;
+    font-family: 18px;
+    /* color: white; */
+}
+
+#sel1{
+    background: rgb(218, 235, 240);
+}
+
+
+#sel2{
+    background: rgb(218, 235, 240);
+}
+
+.flash{
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: rgb(0, 0, 0);
+    /* opacity: 1; */
+
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    transition: 0.5s;
+}
+
+.flash.display-none{
+    width: 100%;
+    height: 100%;
+    z-index: -20;
+    background: rgb(0, 0, 0);
+    /* opacity: 1; */
+    opacity: 0;
+
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+#headMain{
+    color: rgb(236, 236, 236);
+    font-family: mercuria;
+    padding: 10px;
+    animation-name: iamfading;
+    animation-duration: 0.2s;
+    opacity: 1;
+}
+
+.flash p{
+    color: rgb(93, 93, 93);
+}
+
+.finalValue{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    background: rgba(131, 207, 131, 0.2);
+    padding: 1px 3px 1px 3px;
+}
+h2{
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 450px){
+    body{
+        background-color: tomato;
+    }
+    #mainHeading{
+        font-family: 3em;
+        padding: 10px 5px 5px 5px;
+    }
+
+}
+
