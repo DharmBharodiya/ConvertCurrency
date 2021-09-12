@@ -12,6 +12,16 @@ var resultFrom;
 var resultTo;
 var searchValue;
 
+var images = document.querySelector(".images");
+var headMain = document.querySelector("#headMain");
+var converter = document.querySelector(".converter");
+
+const tl = new TimelineMax();
+
+tl.fromTo(images, 2, {opacity: "0"}, {opacity: "1", ease: Power2.easeInOut })
+.fromTo(headMain, 0.5, {x: "-1000%"}, {x: "0%", ease: Power2.easeInOut}, "-=1")
+.fromTo(converter, 0.5, {x: "+1000%"}, {x: "0%", ease: Power2.easeInOut}, "-=1");
+
 
 
 var flash = document.querySelector('.flash');
@@ -75,3 +85,6 @@ function clearVal() {
 	window.location.reload();
 	document.getElementsByClassName("finalValue").innerHTML = "";
 };
+// finalValue.style.padding = "1px 3px";
+	// finalValue.style.padding = "1px 3px";
+
