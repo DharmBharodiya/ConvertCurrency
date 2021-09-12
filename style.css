@@ -21,6 +21,7 @@ body{
     width: 100%;
     z-index: 1;
     background: rgb(245, 241, 241);
+    background: #f4edea;
 }
 #mainHeading{
     /* font-family: 'Open Sans', sans-serif; */
@@ -93,6 +94,25 @@ body{
     animation-name: iamfading;
     animation-duration: 0.2s;
     opacity: 1;
+    background-color: #CA4246;
+    background-image: linear-gradient(
+        45deg,
+        #CA4246 16.666%, 
+        #E16541 16.666%, 
+        #E16541 33.333%, 
+        #F18F43 33.333%, 
+        #F18F43 50%, 
+        #8B9862 50%, 
+        #8B9862 66.666%, 
+        #476098 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    animation: rainbow-text-simple-animation 2s ease-in forwards;
 }
 
 .flash p{
@@ -103,24 +123,33 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     background: rgba(131, 207, 131, 0.2);
-    padding: 1px 3px 1px 3px;
+    /* padding: 1px 3px 1px 3px; */
 }
 h2{
     margin-top: 5px;
 }
 
+label{
+    text-align: center;
+}
 
 
+/* Animation keyframes */
+
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
 
 
-
-
-
-
-
-
-
-
+/* media queries */
 
 @media only screen and (max-width: 450px){
     body{
