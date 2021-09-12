@@ -108,6 +108,7 @@ body{
         #476098 83.333%, 
         #A7489B 83.333%);
     background-size: 100%;
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
