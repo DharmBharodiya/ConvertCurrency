@@ -29,18 +29,24 @@
 
 	<link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/dollar.png" type="image/x-icon">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
+
+
     <div id="flashScreen" class="flash">
         <h1 id="headMain">Currency</h1>
         <div class="images">
             <img src="images/dollar.png" alt="">
             <img src="images/moneyBag.png" alt="">
         </div>
-        <h1 id="headMain">Converter</h1>
+        <h1 id="headMain" class="converter">Converter</h1>
         <p>By dharmBharodiya</p>
     </div>
+
+
     <div id="mainDiv">
 	<h1 class="heading text-center display-2" id="mainHeading">
 		Currency Converter</h1>
@@ -51,7 +57,7 @@
 		<div class="main">
 
 			<div class="form-group">
-				<label for="oamount">
+				<label for="oamount" class="amount">
 					The amount to be converted:
 				</label>
 				<input type="text"
